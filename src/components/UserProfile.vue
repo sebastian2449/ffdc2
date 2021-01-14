@@ -1,7 +1,10 @@
 <template>
   <div class="user-profile">
     <div class= "user-profile_user-panel">
-      <h1 class="user-profile_user-name">@{{user.username}}></h1>
+      <h1 class="user-profile_user-name">@{{user.username}}</h1>
+      <div class="user-profile_admin-batch" v-if="user.isAdmin ">
+        Admin
+      </div>
       <div class="user-profile_follower-count">
         <strong>Followers:</strong>{{followers}}
       </div>
@@ -22,7 +25,7 @@ export default {
         firstName: 'Sebastian',
         lastName: 'Vanegas Ruiz',
         email: 'sebastian2449@gmail.com',
-        isAdmin: true
+        isAdmin: false
       }
     }
   },
@@ -76,6 +79,16 @@ export default {
   border: 1px solid #DFE3E8
 
 }
+
+.user-profile_admin-batch{
+  background: coral;
+  color: white;
+  border-radius: 5px;
+  margin-right: auto;
+  padding: 0px 10px;
+  font-weight: bold;
+}
+
 
 h1{
   margin:0;

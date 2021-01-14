@@ -6,6 +6,7 @@
         <strong>Followers:</strong>{{followers}}
       </div>
     </div>
+   </div>
 </template>
 
 <script>

@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <user-profile/>
+        <UserProfile/>
     </div>
 </template>
 
@@ -19,6 +19,7 @@ export default {
     font-family: Avenir, Helvetica, Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
     min-height: 100vh;
     background-color: #F3F5FA;
 }

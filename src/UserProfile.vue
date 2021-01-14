@@ -1,8 +1,8 @@
 <template>
   <div class="user-profile">
     <div class= "user-profile_user-panel">
-      <h1 class="user-profile__user-name">@{{user.username}}></h1>
-      <div class="user-profile__follower-count">
+      <h1 class="user-profile_user-name">@{{user.username}}></h1>
+      <div class="user-profile_follower-count">
         <strong>Followers:</strong>{{followers}}
       </div>
     </div>

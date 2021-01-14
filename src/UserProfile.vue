@@ -57,13 +57,22 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  min-height:100vh;
-  background-color: #F3F5FA;
+
+.user-profile{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
+  padding:50px 5%;
+}
+
+.user-profile_user-panel{
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #DFE3E8
 
 }
 

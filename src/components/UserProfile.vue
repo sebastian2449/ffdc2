@@ -5,9 +5,15 @@
       <div class="user-profile_admin-batch" v-if="user.isAdmin ">
         Admin
       </div>
+      <div class="user-profile_admin-batch" v-else>
+        Not Admin
+      </div>
       <div class="user-profile_follower-count">
         <strong>Followers:</strong>{{followers}}
       </div>
+    </div>
+    <div class="user-profile_twoots-wrapper">
+       <TwootItem v-for="twoot in user.twoots" :key="twoot.id" :username="user.username" :twoot="twoot"/>
     </div>
    </div>
 </template>
@@ -25,7 +31,11 @@ export default {
         firstName: 'Sebastian',
         lastName: 'Vanegas Ruiz',
         email: 'sebastian2449@gmail.com',
-        isAdmin: false
+        isAdmin: true,
+        twoots:[
+          {id:1,content:'This website is amazing'},
+          {id:2,content:'Dont forget to suscribe'}
+        ]
       }
     }
   },
